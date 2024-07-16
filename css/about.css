@@ -1,0 +1,89 @@
+.mission-vision {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.mission-vision .text-center {
+    margin-bottom: 4rem;
+}
+
+.mission-vision h5 {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.mission-vision h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.mission-vision p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.mission-vision h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.mission-vision .mission-list,
+.mission-vision .vision-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mission-vision .mission-list li,
+.mission-vision .vision-list li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.mission-vision .mission-list li i,
+.mission-vision .vision-list li i {
+    margin-right: 0.5rem;
+}
+
+.mission-vision .wow {
+    visibility: hidden;
+}
+
+[data-wow-delay] {
+    animation-delay: var(--wow-delay);
+}
+
+[data-wow-delay=".3s"] {
+    --wow-delay: .3s;
+}
+
+[data-wow-delay=".5s"] {
+    --wow-delay: .5s;
+}
+
+@media (min-width: 768px) {
+    .mission-vision .text-center {
+        margin-bottom: 5rem;
+    }
+
+    .mission-vision h1 {
+        font-size: 3rem;
+    }
+
+    .mission-vision h2 {
+        font-size: 2.5rem;
+    }
+
+    .mission-vision p {
+        font-size: 1.125rem;
+    }
+
+    .mission-vision .mission-list li,
+    .mission-vision .vision-list li {
+        font-size: 1.125rem;
+    }
+}

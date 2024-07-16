@@ -88,23 +88,47 @@
 
 
      // Fact Counter
-
-     $(document).ready(function(){
-        $('.counter-value').each(function(){
-            var $this = $(this),
-                countTo = $this.text().replace(/[^0-9.]/g, ''); // Include decimal points
-
-            $this.prop('Counter',0).animate({
-                Counter: countTo
-            },{
-                duration: 2000,
-                easing: 'easeInQuad',
-                step: function (now){
-                    $this.text(parseFloat(now).toFixed(1) + $this.data('suffix')); // Ensure one decimal place
+     document.addEventListener('DOMContentLoaded', function () {
+        function animateCounters() {
+            $('.counter-value').each(function(){
+                var $this = $(this),
+                    countTo = $this.text().replace(/[^0-9.]/g, ''); // Include decimal points
+    
+                $this.prop('Counter', 0).animate({
+                    Counter: countTo
+                },{
+                    duration: 4000,
+                    easing: 'easeInQuad',
+                    step: function (now){
+                        $this.text(parseFloat(now).toFixed(1) + $this.data('suffix')); // Ensure one decimal place
+                    }
+                });
+            });
+        }
+    
+        // Intersection Observer setup
+        let observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5 // Adjust this threshold as needed
+        };
+    
+        let observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target); // Stop observing after animation
                 }
             });
-        });
+        }, observerOptions);
+    
+        let countersSection = document.querySelector('.counters-section');
+        if (countersSection) {
+            observer.observe(countersSection);
+        }
     });
+    
+    
 
 
 })(jQuery);

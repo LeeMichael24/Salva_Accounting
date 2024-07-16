@@ -1,6 +1,13 @@
 /* VAribales */
-:root{
-    --secondary: #26d48c;
+
+
+:root {
+    --bs-primary: #003366;
+    --bs-secondary: #006699;
+    --bs-white: #ffffff;
+    --bs-dark: #333333;
+    --bs-accent: #e67e22;
+    --bs-primary-services: #1842b6;
 }
 
 /*** Spinner Start ***/
@@ -42,7 +49,8 @@
         }
     }
     .section-sucess{
-        margin-bottom: -6rem;
+        padding-bottom: 1rem;
+        padding-top: 6rem !important;
     }
 /* HOME END */
 
@@ -84,6 +92,7 @@
 }
 
 .back-to-top {
+    background-color: var(--bs-secondary);
     position: fixed;
     width: 50px;
     height: 50px;
@@ -365,6 +374,10 @@
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
+.network-header {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/network.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--bs-white);
@@ -374,6 +387,10 @@
 .page-header .breadcrumb-item a {
     font-size: 18px;
     color: var(--bs-white);
+}
+
+.breadcrumb-item a{
+    color: var(--bs-white) !important;
 }
 
 /*** Carousel End ***/
@@ -430,7 +447,7 @@
 }
 
 .services-item:hover .services-content-icon i {
-    color: var(--bs-secondary) !important;
+    color: var(--bs-white) !important;
 }
 
 .services-item:hover .services-content-icon p {
@@ -756,6 +773,16 @@
     border: 0;
 }
 
+.text-secondary-footer{
+    color: var(--bs-secondary);
+}
+.text-primary{
+    color: #e67e22;
+}
+.text-myColor{
+    color: #e67e22;
+}
+
 /*** Footer End ***/
 
 
@@ -832,3 +859,67 @@
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
+
+
+
+  @media (min-width: 1080px) {
+    .container{
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+    a{
+        
+    }
+  }
+
+
+
+
+  /* CTA */
+  .cta-section {
+    background: var(--bs-secondary);
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.cta-section h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.cta-section .btn-primary {
+    background-color: var(--bs-white);
+    border: none;
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0.75rem 2.5rem;
+}
+
+.cta-section .btn-primary:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .cta-section h1 {
+        font-size: 3rem;
+    }
+
+    .cta-section p {
+        font-size: 1.25rem;
+    }
+}
+
+/* CTA END */
