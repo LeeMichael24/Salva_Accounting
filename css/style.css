@@ -814,6 +814,13 @@
     background: var(--bs-white);
     color: var(--bs-dark) !important;
 }
+.btn-about{
+    background: var(--bs-primary);
+}
+.btn-about:hover{
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
 
 /*** Footer End ***/
 
