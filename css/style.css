@@ -786,12 +786,12 @@
     border: 0;
 }
 
-/* .text-secondary-footer{
+.text-secondary-footer{
     color: var(--bs-secondary);
 }
 .text-myColor{
     color: #e67e22;
-} */
+}
 .text-white{
     color: var() !important;
 }
