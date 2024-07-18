@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HighTech - IT Solutions Website Template</title>
+    <title>Vega Consulting</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,6 +29,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/about.css" rel="stylesheet">
+
+    <!-- CDN AOS styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +55,6 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item" aria-current="page">About</li>
                 </ol>
             </nav>
@@ -72,7 +74,8 @@
                     <div class="h-100 position-relative">
                         <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="About Vega Consulting"
                             style="margin-bottom: 25%;">
-                        <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                        <div class="position-absolute w-75" style="top: 25%; left: 25%;" data-aos="fade-up"
+                            data-aos-duration="1900">
                             <img src="img/about-2.jpg" class="img-fluid w-100 rounded"
                                 alt="Our Team at Vega Consulting">
                         </div>
@@ -80,7 +83,8 @@
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                     <h5 class="text-primary">About Us</h5>
-                    <h1 class="mb-4">Empower Your Business with Vega Consulting</h1>
+                    <h1 class="mb-4" data-aos="fade-left" data-aos-duration="2100">Empower Your Business with Vega
+                        Consulting</h1>
                     <p>Welcome to Vega Consulting, your partner in achieving business excellence. Based in Glen Burnie,
                         Maryland, we specialize in financial planning, business consulting, social media marketing, and
                         app development. Our services are available both online and in-person, ensuring we meet your
@@ -88,7 +92,7 @@
                     <p class="mb-4">Our mission is to empower and guide entrepreneurs and businesses towards success.
                         With our comprehensive and tailored solutions, you can enhance your digital presence, streamline
                         operations, and achieve your business goals with confidence.</p>
-                    <a href="#services" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Discover More</a>
+                    <a href="contact.html" class="btn btn-services rounded-pill px-5 py-3 text-white">Contact Us Today!</a>
                 </div>
             </div>
         </div>
@@ -140,7 +144,7 @@
 
 
     <!-- Team Start -->
-<!--     <div class="container-fluid pb-5 mb-5 team mt-5">
+    <!--     <div class="container-fluid pb-5 mb-5 team mt-5">
         <div class="container pb-5">
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                 <h5 class="text-primary">Our Team</h5>
@@ -266,6 +270,12 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/loadComponents.js"></script>
+
+    <!-- AOS INIT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HighTech - IT Solutions Website Template</title>
+    <title>Vega Consulting</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,6 +29,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/services.css" rel="stylesheet">
+
+    <!-- CDN AOS styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,13 +48,12 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
+    <div class="container-fluid page-header py-5 services-header">
         <div class="container text-center py-5">
             <h1 class="display-2 text-white mb-4 animated slideInDown">Services</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item" aria-current="page">Services</li>
                 </ol>
             </nav>
@@ -142,7 +144,7 @@
                             </ul>
                         </div>
                         <div class="order-md-2 order-1 img-section">
-                            <img src="img/marketing.jpg" class="img-fluid rounded service-img"
+                            <img src="img/socialMedia.png" class="img-fluid rounded service-img"
                                 alt="Social Media Marketing">
                         </div>
                     </div>
@@ -251,6 +253,12 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/loadComponents.js"></script>
+
+    <!-- AOS INIT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
